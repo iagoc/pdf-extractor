@@ -4,8 +4,6 @@ async function sendWord() {
     const search = document.getElementById('search').value; 
     const list = document.getElementById('fill_list');
 
-    let phrase_list = [];
-
     fetch("/extract-phrase", {
         method: 'POST',
         headers: {
