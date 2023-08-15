@@ -46,7 +46,7 @@ app.post("/extract-phrase", async (req, res) => {
         });
         await Promise.all(promises)
         console.log (data);
- 
+        console.log ('conflict');
         res.send(data);
     }
     
